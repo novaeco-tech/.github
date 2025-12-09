@@ -1,7 +1,6 @@
 # 🌍 NovaEco — Digital Public Infrastructure for the Circular Economy
 
-**NovaEco** is the open‑source **Digital Public Infrastructure** for the circular economy.  
-It connects individuals and siloed sectors to **foster innovation**, measure impact, and **collaborate** within a federated system-of-systems.
+**NovaEco** is the open‑source **Digital Public Infrastructure** for the circular economy. It connects individuals and siloed sectors to **foster innovation**, measure impact, and **collaborate** within a federated system-of-systems.
 
 NovaEco is commercially supported by **[Circular Engineering Nova GmbH](https://circular.engineering/)**.
 
@@ -9,13 +8,12 @@ NovaEco is commercially supported by **[Circular Engineering Nova GmbH](https://
 
 ## 🚀 Key Entry Points
 
-The ecosystem is anchored by **four core services** that provide unified identity, orchestration, and access management:
+The ecosystem is anchored by **four core services** (hosted in the `novaeco` repository) that provide unified identity, orchestration, and access management:
 
-- 📊 **[Central App](https://app.novaeco.tech)** — Mission Control for onboarding, discovery, and ecosystem management.
-- 🔐 **[Identity Service](https://auth.novaeco.tech)** — Digital Passport & Trust Profile for unified login.
-- 🔗 **[API Gateway](https://api.novaeco.tech)** — API gateway for secure, managed access to all services.
-- 🌐 **[Website & Docs](https://novaeco.tech)** — Architecture, use cases, and developer guides.
-- 💬 **Contact:** [contact@novaeco.tech](mailto:contact@novaeco.tech)
+- 📊 **[Mission Control](https://app.novaeco.tech)** — Unified dashboard and launchpad for all ecosystem application.
+- 🔗 **[Gateway](https://api.novaeco.tech)** — Single public API entry point for all external traffic.
+- 🔐 **[Identity](https://auth.novaeco.tech)** — Centralized SSO, MFA, and Trust Profile issuance service.
+- 🌐 **[Docs](https://novaeco.tech)** — Public landing page and technical documentation hub.
 
 ---
 
@@ -23,66 +21,62 @@ The ecosystem is anchored by **four core services** that provide unified identit
 
 NovaEco follows a **Federated Monorepo model**. Each **Enabler** or **Sector** is a self-contained monorepo that groups its API, App, Website, and Tests together.
 
-### 1. Core Monorepo — [`ecosystem-core`](https://github.com/novaeco-tech/ecosystem-core)
-The “heart” of the ecosystem, containing the tightly‑coupled central services.
+### 1. Horizontal Enabler Monorepos
+Cross‑cutting foundational services consumed by all sectors:
 
-### 2. Horizontal Enabler Monorepos
-Cross‑cutting foundational services:
-- **[NovaHub](https://github.com/novaeco-tech/novahub)** — Innovation wizard, complex problem decomposition, orchestration.
-- **[NovaFin](https://github.com/novaeco-tech/novafin)** — Tokens, staking, payments, revenue sharing, investment.
-- **[NovaTrade](https://github.com/novaeco-tech/novatrade)** — Decentralized marketplace for goods, services, and assets.
-- **[NovaSapien](https://github.com/novaeco-tech/novasapien)** — Shared artificial intelligence and ML models.
-- **[NovaEnergy](https://github.com/novaeco-tech/novaenergy)** — Renewable energy production, distribution, and auditing.
-- **[NovaMaterial](https://github.com/novaeco-tech/novamaterial)** — Digital Product Passports (DPPs), lifecycle tracking.
-- **[NovaMobility](https://github.com/novaeco-tech/novamobility)** — Circular logistics and sustainable transport coordination.
-- **[NovaInfra](https://github.com/novaeco-tech/novainfra)** — Shared digital/physical infrastructure.
-- **[NovaSkills](https://github.com/novaeco-tech/novaskills)** — Education, skill‑sharing, labor coordination.
-- **[NovaPolicy](https://github.com/novaeco-tech/novapolicy)** — Governance, compliance, legal frameworks.
-- **[NovaBalance](https://github.com/novaeco-tech/novabalance)** — Environmental auditing, proof of ecological impact.
-- **[NovaEquity](https://github.com/novaeco-tech/novaequity)** — Social auditing, proof of fairness and social impact.
+- **[NovaBalance](https://github.com/novaeco-tech/novabalance)** — Environmental audit engine for carbon, water, and mass[.
+- **[NovaEquity](https://github.com/novaeco-tech/novaequity)** — Social audit engine tracking fair wages and labor rights.
+- **[NovaFin](https://github.com/novaeco-tech/novafin)** — Ledger for payments, staking, and ESG token settlements.
+- **[NovaInfra](https://github.com/novaeco-tech/novainfra)** — Registry for IoT devices and fleet management command.
+- **[NovaLogistics](https://github.com/novaeco-tech/novalogistics)** — Optimization engine for reverse logistics and circular transport.
+- **[NovaMaterial](https://github.com/novaeco-tech/novamaterial)** — Engine for Digital Product Passports and material lineage.
+- **[NovaMind](https://github.com/novaeco-tech/novamind)** — Shared AI models and inference engine for all sectors.
+- **[NovaPolicy](https://github.com/novaeco-tech/novapolicy)** — Policy-as-Code engine for automated regulatory compliance checks.
+- **[NovaSkills](https://github.com/novaeco-tech/novaskills)** — Verification system for human labor certifications and degrees.
+- **[NovaTrade](https://github.com/novaeco-tech/novatrade)** — Marketplace for matching orders and discovering circular assets.
 
-### 3. Vertical Sector Monorepos
-Industry‑specific applications consuming Enablers:
-- **[NovaAgro](https://github.com/novaeco-tech/novaagro)** — Sustainable agriculture, bio‑nutrients, post‑harvest processing.
-- **[NovaWater](https://github.com/novaeco-tech/novawater)** — Water resource management, sustainable use, restoration.
-- **[NovaBuild](https://github.com/novaeco-tech/novabuild)** — Sustainable construction, circular building materials.
-- **[NovaTextile](https://github.com/novaeco-tech/novatextile)** — Lifecycle of textiles, sustainable sourcing, recycling.
-- **[NovaWaste](https://github.com/novaeco-tech/novawaste)** — Waste‑to‑value streams, recycling management.
-- **[NovaAir](https://github.com/novaeco-tech/novaair)** — Air quality monitoring, environmental credits.
-- **[NovaHealth](https://github.com/novaeco-tech/novahealth)** — Circular economy principles in healthcare.
-- **[NovaPack](https://github.com/novaeco-tech/novapack)** — Reusable packaging systems, deposit models.
-- **[NovaTronix](https://github.com/novaeco-tech/novatronix)** — Sustainable electronics, modular design, repair.
-- **[NovaChem](https://github.com/novaeco-tech/novachem)** — Sustainable chemical processes, leasing models.
+### 2. Vertical Sector Monorepos
+Industry‑specific applications that consume Enablers:
 
-### 4. Worker Repos
-Decoupled, single‑purpose backend services (e.g., `novahub-worker-sync`) for scalability and fault isolation.
+- **[NovaAgro](https://github.com/novaeco-tech/novaagro)** — Management of regenerative agriculture and sustainable food systems.
+- **[NovaAir](https://github.com/novaeco-tech/novaair)** — Air quality monitoring and carbon capture credit verification.
+- **[NovaBuild](https://github.com/novaeco-tech/novabuild)** — Management of construction lifecycles and material banks.
+- **[NovaChem](https://github.com/novaeco-tech/novachem)** — Chemical leasing models and hazardous material tracking.
+- **[NovaEnergy](https://github.com/novaeco-tech/novaenergy)** — Renewable grid balancing and vehicle-to-grid energy coordination.
+- **[NovaMake](https://github.com/novaeco-tech/novamake)** — Distributed manufacturing via 3D printing and CNC networks.
+- **[NovaNature](https://github.com/novaeco-tech/novanature)** — Biodiversity monitoring and reforestation project management.
+- **[NovaPack](https://github.com/novaeco-tech/novapack)** — Reusable packaging systems and deposit return schemes.
+- **[NovaRecycle](https://github.com/novaeco-tech/novarecycle)** — Management of recycling centers and urban mining recovery.
+- **[NovaRetail](https://github.com/novaeco-tech/novaretail)** — Product-as-a-Service management and consumer take-back schemes.
+- **[NovaTronix](https://github.com/novaeco-tech/novatronix)** — E-waste management and electronics repair documentation.
+- **[NovaTextile](https://github.com/novaeco-tech/novatextile)** — Circular fashion management and fiber-to-fiber recycling loops.
+- **[NovaWater](https://github.com/novaeco-tech/novawater)** — Management of industrial water cycles and treatment systems.
 
-### 5. Product Repos
-Flagship applications that consume multiple enablers and sectors:
-- **[DurasAGV](https://github.com/novaeco-tech/product-duras-agv)** – autonomous logistics robots integrating NovaSapien and NovaAgro.
-- **Urban Mining Coordination** – orchestration app combining NovaBuild, NovaWaste, and NovaMobility.
-- **Reusable Packaging Systems** – products integrating NovaPack, NovaMobility, and NovaWater.
-- **City‑Wide Loop** – unified reusable cup system across entire cities.
-- **Circular Hospital** – healthcare equipment leasing and reuse models.
+### 3. Worker Repos
+Decoupled, single‑purpose backend services for high-throughput tasks:
 
-### 6. Governance & Tooling Repos
-- **[ecosystem-devtools](https://github.com/novaeco-tech/ecosystem-devtools)** — Shared CLI, Docker images, and standard developer configurations.
-- **[ecosystem‑qa](https://github.com/novaeco-tech/ecosystem-qa)** — Integration testing gatekeeper for the ecosystem.
-- **[ecosystem‑releases](https://github.com/novaeco-tech/ecosystem-releases)** — CalVer‑tagged release manifests and BOMs.
+- **[novaair-worker-quality](https://github.com/novaeco-tech/novaair-worker-quality)** — Ingests and normalizes data from air quality sensors.
+- **[novanature-worker-bioacoustics](https://github.com/novaeco-tech/novanature-worker-bioacoustics)** — Identifies species from audio streams using AI models.
+- **[novainfra-worker-iot-ingest](https://github.com/novaeco-tech/novainfra-worker-iot-ingest)** — High-throughput processor for raw telemetry from sensors.
+- **[novabalance-worker-lca-calculator](https://github.com/novaeco-tech/novabalance-worker-lca-calculator)** — Calculates real-time environmental impact from material BOMs.
+- **[novamake-worker-slicer-check](https://github.com/novaeco-tech/novamake-worker-slicer-check)** — Verifies 3D model printability for manufacturing jobs.
+- **[novafin-worker-trade-settlement](https://github.com/novaeco-tech/novafin-worker-trade-settlement)** — Asynchronously batches and commits transactions to the ledger.
+
+### 4. Product Repos
+Flagship applications combining multiple sectors:
+
+- **[DurasAGV](https://github.com/novaeco-tech/product-duras-agv)** — Autonomous agricultural robot for regenerative farming tasks.
+- **[NovaLab](https://github.com/novaeco-tech/product-nova-lab)** — Innovation engine for designing and launching circular projects.
+- **[RetailLoop](https://github.com/novaeco-tech/product-retail-loop)** — E-commerce plugin for resale and product take-back.
+- **[UrbanMiner](https://github.com/novaeco-tech/product-urban-miner)** — Dashboard for city councils to map municipal waste streams.
 
 ---
 
 ## 🤝 Contributing
 
-We welcome contributors of all kinds — code, docs, design, and governance.  
-Start with our [Contribution Guide](../CONTRIBUTING.md) and [Code of Conduct](../CODE_OF_CONDUCT.md).
+We welcome contributors of all kinds. Start with our [Contribution Guide](../CONTRIBUTING.md) and [Code of Conduct](../CODE_OF_CONDUCT.md).
 
 **Finding your way:**
-1. Begin with [`ecosystem-core`](https://github.com/novaeco-tech/ecosystem-core) to understand the platform.  
-2. Explore Enabler or Sector repos that match your interests.  
-3. Check out Product repos to see how everything comes together.  
-4. Look at Worker repos for backend microservices.
-
----
-
-NovaEco is committed to openness, transparency, and collaboration. Together we can build the operating system for a truly circular economy.
+1. Begin with [`novaeco`](https://github.com/novaeco-tech/novaeco) to understand the platform foundation.
+2. Explore Enabler or Sector repos that match your interests.
+3. Check out Product repos to see how everything comes together.

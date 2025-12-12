@@ -8,9 +8,8 @@ NovaEco is commercially supported by **[Circular Engineering Nova GmbH](https://
 
 ## 🚀 Key Entry Points
 
-The ecosystem is anchored by **four core services** (hosted in the `novaeco` repository) that provide unified identity, orchestration, and access management:
+The ecosystem is anchored by **three core services** (hosted in the `novaeco` repository) that provide unified identity, orchestration, and access management:
 
-- 📊 **[Mission Control](https://app.novaeco.tech)** — Unified dashboard and launchpad for all ecosystem application.
 - 🔗 **[Gateway](https://api.novaeco.tech)** — Single public API entry point for all external traffic.
 - 🔐 **[Identity](https://auth.novaeco.tech)** — Centralized SSO, MFA, and Trust Profile issuance service.
 - 🌐 **[Docs](https://novaeco.tech)** — Public landing page and technical documentation hub.
@@ -24,7 +23,8 @@ NovaEco follows a **Federated Monorepo model**. Each **Enabler** or **Sector** i
 ### 1. Horizontal Enabler Monorepos
 Cross‑cutting foundational services consumed by all sectors:
 
-- **[NovaBalance](https://github.com/novaeco-tech/novabalance)** — Environmental audit engine for carbon, water, and mass[.
+- **[NovaAdmin](https://github.com/novaeco-tech/novaadmin)** — Unified dashboard and launchpad for all ecosystem application.
+- **[NovaBalance](https://github.com/novaeco-tech/novabalance)** — Environmental audit engine for carbon, water, and mass.
 - **[NovaEquity](https://github.com/novaeco-tech/novaequity)** — Social audit engine tracking fair wages and labor rights.
 - **[NovaFin](https://github.com/novaeco-tech/novafin)** — Ledger for payments, staking, and ESG token settlements.
 - **[NovaInfra](https://github.com/novaeco-tech/novainfra)** — Registry for IoT devices and fleet management command.

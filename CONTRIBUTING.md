@@ -10,8 +10,8 @@ First, please read our **[Code of Conduct](./CODE_OF_CONDUCT.md)**. We are commi
 
 Our organization uses a **Federated Monorepo model** to group related code, making it easier to develop and test features atomically.
 
-1.  **`novaeco`**: **The Core Monorepo.** This is the "heart" that runs the entire system. It contains our central `/api` (Gateway), `/auth` (Identity), `/app` (Mission Control), and `/website` (Docs).
-2.  **Horizontal Enabler Monorepos** (e.g., `novahub`, `novafin`, `novabalance`): **The Foundational Services.** These are the cross-cutting, shared services (like finance, or auditing) that all sectors consume.
+1.  **`novaeco`**: **The Core Monorepo.** This is the "heart" that runs the entire system. It contains our central `/api` (Gateway), `/auth` (Identity), and `/website` (Docs).
+2.  **Horizontal Enabler Monorepos** (e.g., `novaadmin`, `novahub`, `novafin`, `novabalance`): **The Foundational Services.** These are the cross-cutting, shared services (like finance, or auditing) that all sectors consume.
 3.  **Vertical Sector Monorepos** (e.g., `novaagro`, `novawater`, `novabuild`): **The Industry Applications.** These are the end-user-facing applications for a specific market, which are built by *consuming* the enablers.
 4.  **Decoupled Workers** (e.g., `novaair-worker-quality`): **Backend Services.** These are separate, single-purpose repos for background tasks, developed and deployed independently.
 5.  **Central Governance** (e.g., `ecosystem-qa`, `ecosystem-releases`): Repos that manage testing *between* repositories and define our official releases.

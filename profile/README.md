@@ -10,12 +10,18 @@ NovaEco is commercially supported by **[Circular Engineering Nova GmbH](https://
 *Note: We are currently migrating from our legacy prototype to a high-performance, event-driven polyrepo architecture. Our Q2/Q3 2026 development sprint is focused strictly on the core orchestration infrastructure.*
 
 ### 🧱 Core Infrastructure (Active Development)
-- **[novaeco](https://github.com/novaeco-tech/novaeco)** — [KERNEL] System Legislature: Architecture specs (ADRs), Requirements, and Governance docs.
-- **[novaeco-gateway](https://github.com/novaeco-tech/novaeco-gateway)** — [GATEWAY] Unified Ingress: Hybrid REST/gRPC proxy routing public traffic.
-- **[novaeco-auth](https://github.com/novaeco-tech/novaeco-auth)** — [AUTH] Identity Verifier: High-speed internal token validation and RBAC.
-- **[novaeco-devtools](https://github.com/novaeco-tech/novaeco-devtools)** — Developer Tooling: CLI, standard base images, and workspace scripts.
-- **[novaeco-sentinel](https://github.com/novaeco-tech/novaeco-sentinel)** — [SENTINEL] AIOps & Governance: CI/CD drift detection and live telemetry auditing.
-- **[novaeco-operations](https://github.com/novaeco-tech/novaeco-operations)** — Infrastructure as Code: Terraform and Kubernetes deployment manifests.
+- **[Kernel](https://github.com/novaeco-tech/novaeco)** — System Legislature: Architecture specs (ADRs), Requirements, and Governance docs.
+- **[Gateway](https://github.com/novaeco-tech/novaeco-gateway)** — Unified Ingress: Hybrid REST/gRPC proxy routing public traffic.
+- **[Auth](https://github.com/novaeco-tech/novaeco-auth)** — Identity Verifier: High-speed internal token validation and RBAC.
+- **[UI](https://github.com/novaeco-tech/novaeco-ui)** — User Interface: Launchpad and other shared UI elements once.
+- **[Website](https://github.com/novaeco-tech/novaeco-website)** — Public Portal: Marketing landing page and user guide documentation.
+- **[Sentinel](https://github.com/novaeco-tech/novaeco-sentinel)** — AIOps & Governance: CI/CD drift detection and live telemetry auditing.
+- **[Backup](https://github.com/novaeco-tech/novaeco-backup)** — Backup & Recovery: Disaster recovery snapshots to cold storage.
+- **[QA](https://github.com/novaeco-tech/novaeco-qa)** — Quality: Central quality assurance hub. Runs inter-enabler/sector/worker/product test suites.
+- **[Releases](https://github.com/novaeco-tech/novaeco-releases)** — Release manifests: defining the artifacts for each stable ecosystem release.
+- **[Operations](https://github.com/novaeco-tech/novaeco-operations)** — Infrastructure as Code: Terraform and Kubernetes deployment manifests.
+- **[Runtime](https://github.com/novaeco-tech/novaeco-runtime)** — Base Images: Hardened Docker images (Python/Node) used by all service builds.
+- **[DevTools](https://github.com/novaeco-tech/novaeco-devtools)** — Developer Tooling: CLI, standard base images, and workspace scripts.
 
 ---
 

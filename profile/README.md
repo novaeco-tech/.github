@@ -68,11 +68,39 @@ Decoupled, single‑purpose backend services for high-throughput tasks:
 - **[novafin-worker-trade-settlement](https://github.com/novaeco-tech/novafin-worker-trade-settlement)** — Asynchronously batches and commits transactions to the ledger.
 
 ### 4. Product Repos
-Flagship applications combining multiple sectors:
+Flagship applications combining multiple enablers and sectors:
 - **[DurasAGV](https://github.com/novaeco-tech/product-duras-agv)** — Autonomous agricultural robot for regenerative farming tasks.
 - **[NovaLab](https://github.com/novaeco-tech/product-nova-lab)** — Innovation engine for designing and launching circular projects.
 - **[RetailLoop](https://github.com/novaeco-tech/product-retail-loop)** — E-commerce plugin for resale and product take-back.
 - **[UrbanMiner](https://github.com/novaeco-tech/product-urban-miner)** — Dashboard for city councils to map municipal waste streams.
+
+---
+
+## 📊 Ecosystem Use Cases
+
+We demonstrate the scalability of the NovaEco infrastructure across four complexity tiers:
+
+### Tier 1: Onboarding & Control (Foundational Integration)
+* **[O1] The Citizen Passport:** Unified resident digital identity granting secure access to city recycling services.
+* **[O3] Sensor Enrollment:** Rapid, cryptographically secure enrollment of IoT sensor identities.
+* **[O10] Developer Access:** Provisioning scoped API keys for building custom circular economy applications on the DPI.
+
+### Tier 2: Transactional Efficiency
+* **[T1] The Waste Match:** Automated local matching of surplus organic materials to divert waste from landfills.
+* **[T3] Water Quality Alert:** IoT sensors detect critical water pH anomalies and trigger automated staff alerts.
+* **[T10] Compliance Check:** The policy engine scans digital Bills of Materials (BOMs) against global restricted substance lists.
+
+### Tier 3: Value Chain Coordination
+* **[C1] The Circular Loop:** Matching demolition debris directly with local road paving projects for material reuse.
+* **[C4] LCA Calculation:** Instant recalculation of carbon footprints upon material BOM changes via the API.
+* **[C6] Biodiversity Audit:** Audio AI analysis verifies indicator species' return to unlock conditional biodiversity credits.
+
+### Tier 4: Systemic Transformation
+* **[S1] Fiber-to-Fiber:** Full loop tracking from old garment collection to chemical separation and new yarn spinning.
+* **[S4] Automated Factory:** Orders trigger autonomous AI topology optimization and distributed 3D printing production.
+* **[S7] City-Wide Loop:** Real-time municipal dashboards visualizing circularity metrics for data-driven urban planning.
+
+👉 **Explore all 48 Circular Economy Use Cases in our Documentation: [Tier 1](https://github.com/novaeco-tech/novaeco/blob/main/website/docs/usecases/tier-1-onboarding-and-control.md), [Tier 2](https://github.com/novaeco-tech/novaeco/blob/main/website/docs/usecases/tier-2-transactional-efficiency.md), [Tier 3](https://github.com/novaeco-tech/novaeco/blob/main/website/docs/usecases/tier-3-value-chain-coordination.md), [Tier 4](https://github.com/novaeco-tech/novaeco/blob/main/website/docs/usecases/tier-4-systemic-transformation.md).
 
 ---
 
